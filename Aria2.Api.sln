@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aria2.Api", "Aria2.Api.csproj", "{FC15359A-608F-402F-83FF-5C32BF212A00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC15359A-608F-402F-83FF-5C32BF212A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC15359A-608F-402F-83FF-5C32BF212A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC15359A-608F-402F-83FF-5C32BF212A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC15359A-608F-402F-83FF-5C32BF212A00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F98BDDCE-DBAB-4A9C-977B-E9D3F5D4ACF4}
+	EndGlobalSection
+EndGlobal
