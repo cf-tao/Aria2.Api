@@ -1,0 +1,25 @@
+trigger:
+  branches:
+    include:
+      - main 
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+  # Step 1: Checkout the code from Azure Repos
+  - task: Checkout@1
+    displayName: 'Checkout code from Azure Repos'
+
+  # Step 2: Configure Git to authenticate with GitHub
+  - script: |
+      git config --global user.name "Hongtao Li"
+      git config --global user.email "cf_tao@msn.cn"
+      git remote add github https://x-access-token:${{ variables.GITHUB_PAT }}@github.com/cf-tao/Aria2.Api.git
+    displayName: 'Configure Git for GitHub'
+
+  # Step 3: Push changes to GitHub
+  - script: |
+      git push --mirror github
+    displayName: 'Push changes to GitHub'
